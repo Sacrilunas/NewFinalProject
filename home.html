@@ -1,0 +1,70 @@
+
+<!DOCTYPE.html>
+
+<html>
+<body background="https://i0.wp.com/thelittleblushbook.com/wp-content/uploads/2017/12/283037-download-free-marble-background-2048x1347-xiaomi.jpg">
+<link
+rel="stylesheet" href="livcss.css">
+
+<head>
+<title> LIV NYC </title>
+</head>
+<script type="text/javascript" src="livnyc.js">
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<div id="HOME" class="tabcontent">
+  <h3>HOME</h3>
+  <p>GO BACK TO HOME PAGE.</p>
+</div>
+
+<div id="LIFESTYLE" class="tabcontent">
+  <h3>LIFESTYLE</h3>
+  <p>FOOD. WORKOUT. SKIN CARE.</p>
+</div>
+
+<div id="INSTAINSPO" class="tabcontent">
+  <h3>INSTAINSPO</h3>
+  <p>PLACES. OUTFITS.</p>
+</div>
+
+<div id="VENTING" class="tabcontent">
+  <h3>VENTING</h3>
+  <p>SPILL THE TEA.</p>
+</div>
+
+<button class="tablink" onclick="openCity('HOME', this, 'pink')" id="defaultOpen">HOME</button>
+<a href = "lifestyle.html"><button class="tablink" onclick="openCity('LIFESTYLE', this, 'pink')">LIFESTYLE</button></a>
+<a href = "instainspo.html"><button class="tablink" onclick="openCity('INSTAINSPO', this, 'pink')">INSTAINSPO</button></a>
+<a href = "venting.html"><button class="tablink" onclick="openCity('VENTING', this, 'pink')">VENTING</button></a>
+
+<script>
+function openCity(cityName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(cityName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+
+</script>
+
+
+
+<a href = "logout.html"><button>Log out</button></a
+
+
+</body>
+
+
+</html>

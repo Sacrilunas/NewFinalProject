@@ -1,0 +1,30 @@
+<html>
+<head>
+
+  <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-database.js"></script>
+
+
+  <script src="database.js"></script>
+</head>
+
+<body>
+	<p>What is your favourite colour and movie?</p>
+	<div id="message-box"> Your favourite color is: <span id="colour"></span> <br>
+Your favourite movie is: <span id="movie"></span>
+</div>
+
+
+	<div id="pref-form">
+		<input style="display:inline;width:auto;" type="text" id="colour-box" name="colour" placeholder="Colour"/>
+		<input style="display:inline;width:auto;" type="text" id="movie-box" name="movie" placeholder="Movie"/>
+
+		<br/><br/>
+
+		<button id="submit" name="submit" onclick="changePrefs()">Submit</button>
+  <p id = "print"> 
+  </p>
+	</div>
+</body>
+</html>
